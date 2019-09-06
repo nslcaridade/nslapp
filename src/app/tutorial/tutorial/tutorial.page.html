@@ -1,0 +1,54 @@
+
+<ion-content class="content-page" scrollX="true" scrollY="true">
+ <form [formGroup]="tutorialForm">
+  <ion-slides pager="true" #slidesTour>
+    <ion-slide>
+	  <div class="page">
+        <div class="header">
+	      <h5>Seguindo os passos do Senhor</h5>
+		  <h1>Amor ao próximo</h1>
+	    </div>
+	    <div class="main tour">
+	      <ion-img src="/assets/slides/tour/forca_pier.svg"></ion-img>
+		  <p class="ion-text-justify">{{texto1}}</p>
+	    </div>
+	    <div class="footer">
+	      <ion-button color="body" fill="outline" (click)="backMenu()">Menu</ion-button>
+	      <ion-button color="primary" fill="outline" (click)="next()">Próximo</ion-button>
+	    </div>
+	  </div>
+    </ion-slide>
+	<ion-slide>
+	  <div class="page">
+	    <div class="header">
+	      <h5>Pastoral</h5>
+	      <h1>Uma familia a servico</h1>
+	    </div>
+	    <div class="main tour">
+		  <ion-img src="/assets/slides/tour/pier_nos_aguarda.svg"></ion-img>
+	      <p class="ion-text-justify">{{texto2}}</p>
+	    </div>
+	    <div class="footer">
+		  <ion-button color="body" fill="outline" (click)="backMenu()">Menu</ion-button>
+	      <ion-button color="primary" fill="outline" (click)="next()">Próximo</ion-button>
+	    </div>
+	  </div>
+	</ion-slide>
+	<ion-slide>
+	  <div class="page">
+	    <div class="header">
+		  <h5>Caridade o chamado do amor</h5>
+		  <h1>Seguindo os passos do Senhor</h1>
+		</div>
+		<div class="main tour">
+		  <ion-img src="/assets/slides/tour/para_o_alto.svg"></ion-img>
+		  <p class="ion-text-justify">{{texto3}}</p>
+		</div>
+		<div class="footer">
+          <ion-button expand="block" class="cta low" color="orange" (click)="backMenu()" >Menu</ion-button>
+		</div>
+	  </div>
+	</ion-slide>
+  </ion-slides>
+ </form>
+</ion-content>

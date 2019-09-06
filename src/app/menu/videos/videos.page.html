@@ -1,0 +1,23 @@
+<ion-content class="content-page content-gradient" scrollX="true" scrollY="true">
+  <!--<ion-content padding class=MeusDadosPage scroll=”false”>-->
+  <div padding id="videospage-layer">
+    <form [formGroup]="videoForm" (ngSubmit)="sanitize()" autocomplete=”off” >
+      <ion-grid>
+        <ion-list>
+          <label><h5>Videos:</h5></label>
+          <ion-item *ngFor="let video of videos_">
+             <ion-button class="footer-button" color="white" expand="full" (click)="showVideo(video.url)">
+             <h5>{{ video.titulo }}</h5></ion-button>
+          </ion-item>
+        </ion-list>
+      </ion-grid>
+      <ion-grid>
+        <ion-row align-items-center>
+          <ion-col>
+            <ion-button expand="block" class="cta low" color="white" (click)="backMenu()">Voltar</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+ </ion-content>

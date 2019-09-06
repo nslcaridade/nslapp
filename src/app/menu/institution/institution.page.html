@@ -1,0 +1,18 @@
+<ion-content class="content-page content-gradient" scrollX="true" scrollY="true">
+<!--<ion-content padding class=InstitutionPage scroll=”false”>-->
+  <div padding id="institution-layer">
+    <form [formGroup]="institutionForm" (ngSubmit)="logForm()" autocomplete=”off” >
+      <ion-list lines="full">
+        <ion-item *ngFor="let institution of allInstitutions">
+          <ion-button class="footer-button" color="white" expand="full" (click)="showDetalhe(institution.nome, institution.descricao, institution.endereco, institution.telefone)">
+          <h5>{{ institution.nome }}</h5></ion-button>
+        </ion-item>
+      </ion-list>
+      <ion-row align-items-center>
+        <ion-col>
+          <ion-button expand="block" class="cta low" color="white" type="submit" >Volta</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </div>
+</ion-content>

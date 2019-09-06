@@ -1,0 +1,9 @@
+.md,
+.ios {
+	ion-header {
+		// --opacity: 0.2;
+		&::after {
+			background-image: none;
+		}
+	}
+}

@@ -1,0 +1,38 @@
+
+.md,
+.ios {
+	font-size: 16px;
+	color: var(--max-color-hex-body);
+	.input-item {
+		margin: 8px 0;
+		// max-height: 48px;
+		--border-width-top: 1px;
+		--border-color: var(--max-color-hex-body);
+		--padding-start: 0;
+		--padding-end: 0;
+		--padding-bottom: 0;
+		--padding-top: 0;
+		--highlight-height: 1px;
+
+		input {
+			max-height: 33px;
+			font-size: 14px;
+			font-weight: 400;
+			--padding-start: 8px;
+			--padding-end: 0px;
+			--padding-bottom: 12px;
+			--padding-top: 2px;
+			color: var(--max-color-hex-body);
+
+			&::-webkit-input-placeholder {
+				// background-color: #000000;
+				color: var(--max-color-hex-body);
+				opacity: 0.75;
+				text-transform: uppercase;
+				text-align: right;
+				font-weight: 700;
+				font-size: 10px;
+			}
+		}
+	}
+}

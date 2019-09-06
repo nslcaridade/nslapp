@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1096832168303",
+    "firebase_url": "https://nslcaridade.firebaseio.com",
+    "project_id": "nslcaridade",
+    "storage_bucket": "nslcaridade.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096832168303:android:89934380a815e6ff",
+        "android_client_info": {
+          "package_name": "br.com.nsl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096832168303-857e55t57gdcdje315kamcfireejp7fs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-a3UMy5QfwONnlgI9fr-TcULy9stoA8U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096832168303-857e55t57gdcdje315kamcfireejp7fs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+
+<ion-content class="content-page content-gradient" scrollX="true" scrollY="true">
+<!--<ion-content padding class=DetalheInstituicaoPage scroll=”false”>-->
+  <div padding id="detalheInstituicao-layer">
+   <form [formGroup]="detalheInstituicaoForm" (ngSubmit)="back()" autocomplete=”off” >
+    <ion-grid color="blue">
+      <ion-item>
+        <ion-text>
+          <h1>{{nome}}</h1> 
+          <h5>{{descricao}}</h5>
+          <h5>Endereco :{{endereco}}</h5>
+          <h5>Contato  :{{telefone}}<p></p></h5>
+        </ion-text>
+      </ion-item>
+    </ion-grid>    
+    <ion-row align-items-center>
+     <ion-col>
+        <ion-button expand="block" class="cta low" color="white" type="submit" >Volta</ion-button>
+      </ion-col>
+    </ion-row>
+   </form>
+  </div>
+</ion-content>

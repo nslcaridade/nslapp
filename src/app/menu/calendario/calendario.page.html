@@ -1,0 +1,13 @@
+<ion-content class="content-page content-gradient" scrollX="true" scrollY="true">
+  <div padding id="calendario-layer">
+    <div style="text-align:center; color: #B94F19;">Calendário de Atividades</div>
+    <form [formGroup]="calendarioForm" (ngSubmit)="backMenu()" autocomplete=”off” >
+      <ion-list *ngFor="let calendario of allCalendario">
+        <ion-item-option expand="full" color="white" (click)="showDetalhe(calendario)"><h5>Atividade: {{ calendario.descricao }}, Em: {{calendario.dataCalendario}}</h5></ion-item-option>
+      </ion-list>
+      <ion-col>
+        <ion-button expand="block" class="cta low" color="white" type="submit" >Voltar</ion-button>
+      </ion-col>
+    </form>
+  </div>
+</ion-content>

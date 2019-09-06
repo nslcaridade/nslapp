@@ -1,0 +1,40 @@
+<ion-content class=”CadastroPage” scroll=”false”>
+  <div padding id="user-layer">
+    <form [formGroup]="cadastroForm" (ngSubmit)="logForm()" autocomplete=”off” >
+      <ion-row align-items-center>
+        <ion-col>
+          <h5>Vamos Continuar ?</h5>
+          <ion-avatar>
+            <ion-img src="/assets/slides/tour/tour-green.svg"></ion-img>
+          </ion-avatar>
+          <ion-note color="medium">
+            <p class="ion-text-justify">O email informado é de grande utilidade, podemos enviar informações relevante da Pastoral.</p>
+          </ion-note>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-item class="input-item">
+              <ion-input type="phone" placeholder="CELULAR (XX)XXXXX-XXXX" formControlName="telefone" [brmasker]="{form: cadastroForm.get('telefone'), mask: '(99)99999-9999'}"></ion-input>
+						<!--<ion-input type="phone" placeholder="celular: (99) 9999-9999" (keyup)="formatarCelular()" formControlName="telefone" required></ion-input>-->
+					</ion-item>
+					<ion-item class="input-item">
+            <ion-datetime display-format="DD MMM" monthShortNames="Jan, Feb, Mar, Apr, Mai, Jun, Jul, Aug, Sep, Out, Nov, Des" placeholder="Dia e mês do nascimento" formControlName="data_nacimento" required></ion-datetime>
+          </ion-item>
+          <ion-item><ion-label><h5>Dia da acolhida</h5></ion-label>
+            <ion-select multiple="false" cancelText="Cancela" okText="Selecione" formControlName="dia_acolhida" required>
+              <ion-select-option *ngFor="let dia of dia_" value="{{dia.opcao}}">{{dia.opcao}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item><ion-label><h5>Semana da escala</h5></ion-label>
+            <ion-select multiple="false" cancelText="Cancela" okText="Selecione" formControlName="semana_escala" required>
+              <ion-select-option *ngFor="let semana of semana_" value="{{semana.opcao}}">{{semana.opcao}}</ion-select-option>
+            </ion-select>
+          </ion-item>
+					<ion-button expand="block" class="cta" color="orange" type="submit" [disabled]="!cadastroForm.valid">Finalizar</ion-button>
+					<ion-button expand="block" class="cta low" fill="outline" color="body" href="start">Cancelar</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </div>
+</ion-content>

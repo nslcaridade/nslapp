@@ -1,0 +1,13 @@
+<ion-content class="content-page content-gradient" scrollX="true" scrollY="true">
+    <div padding id="detalhe-bazar-layer">
+      <div style="text-align:center; color: #B94F19;">Detalhes de Bazar</div>
+      <ion-label>
+        <h5>{{ descricao }}</h5>
+        <h5>Em: {{ data }}</h5>
+        <h5>Valor arrecadado: R${{ valor }},00</h5>
+      </ion-label>
+       <ion-col>
+          <ion-button expand="block" class="cta" color="orange" (click)="backMenu()">Voltar</ion-button>
+        </ion-col>
+    </div>
+  </ion-content>

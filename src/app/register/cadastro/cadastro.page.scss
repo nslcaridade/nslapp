@@ -1,0 +1,119 @@
+ion-avatar{
+  margin: auto;
+}
+
+.ios, .md {
+
+  user-page {
+
+    scroll-content {
+      background-color: #42c7ff;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    img {
+      width: 50%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    #userLayer {
+     background-image: url('/assets/img/background.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+    }
+
+    ion-row {
+      align-items: center;
+      text-align: center;
+    }
+
+    ion-item {
+      border-radius: 30px !important;
+      padding-left: 10px !important;
+      margin-bottom: 10px;
+      background-color: #f6f6f6;
+      opacity: 0.7;
+      font-size: 0.9em;
+    }
+
+    ion-list {
+      margin: 0;
+    }
+
+    .user.button {
+      width: 100%;
+      border-radius: 30px;
+      font-size: 0.9em;
+      border: 1px solid #fff;
+      background-color: #39acdc;
+    }
+
+     .user-container {
+         border-radius: 10px;
+         opacity: 0.8;
+         width: 80%;
+         text-align: center;
+         background-color: white;
+      }
+      .user-logo{
+          vertical-align: center;
+          text-align: center;
+      }
+      .user-form{
+          opacity: none!important;
+      }
+
+    .container{
+      margin-top: 1.5rem;
+      background:rgba(2, 60, 117, 0.5);
+      border-radius: 5px;
+      box-shadow: 0 1.5px 0 0     rgba(0,0,0,0.1);
+      width:409px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo{
+      align-items: center;
+      justify-content: center;
+      padding: 20px 20px 0;
+      width:25%;
+      height:50%;
+    }
+
+    .card-text{
+      margin-top: 5px;
+      text-align: center;
+      font-family: "museo-slab";
+      font-size:16px;
+    }
+
+    .div-btn{
+      color: white;
+      padding: 20px 20px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button.btn, buttoni.btn {
+      background-color: #4a90e2;
+      color: white;
+      text-align: center;
+    }
+
+    .btn.btn-step{
+      border-radius: 3px;
+      padding: 10px 10px 10px 10px;
+      display: block;
+      height:inherit;
+      width: 100%;
+      background: linear-gradient(to bottom, #4a90e2 0%, #4ab6e2 100%);
+      box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.7), inset 0 2px 0 -1px rgba(98, 98, 98, 0.5), 0 3px 7px -3px rgba(0, 0, 0, 0.7);
+    }
+  }
+}

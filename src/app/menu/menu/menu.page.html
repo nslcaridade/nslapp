@@ -1,0 +1,52 @@
+
+<ion-content class="content-page content-gradient" scrollX="true" scrollY="true">
+    <div>
+      <ion-row >
+        <ion-col size="5">
+        <ion-toolbar color="blue">
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+        </ion-toolbar>
+        </ion-col>
+        <ion-col>
+          <ion-avatar>
+            <!--<img src="../../assets/img/pier_giorgio.jpg" width="150px" height="150px">-->
+            <img src="../../assets/img/pier_desenho.jpg" width="150px" height="150px">
+          </ion-avatar>
+        </ion-col>
+      </ion-row>
+      <ion-row >
+        <ion-col>
+					<ion-text><h3>{{customTextMenu}}</h3></ion-text>
+        </ion-col>
+      </ion-row>
+    </div>
+    <ion-menu>
+      <ion-content>
+        <ion-list lines="full">
+          <ion-row>
+            <ion-col size="4"  align-items-left>
+              <ion-item href="https://nslcaridade.com.br/caridade/">
+                <img src="../../assets/img/logo_nsl.png" width="35px" height="35px">
+              </ion-item>
+            </ion-col>
+            <ion-col></ion-col>
+            <ion-col size="4" align-items-right>
+              <ion-item href="http://www.lourdesalpha.com.br/">
+                <img src="../../assets/img/nsl_site.png" width="40px" height="40px">
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-item-option color="white" (click)="meusDados()"><h4>Meus dados</h4></ion-item-option>
+          <ion-item-option color="white" (click)="instutitions()"><h4>Instituições</h4></ion-item-option>
+          <ion-item-option color="white" (click)="relatorioDoacoes()"><h4>Relatórios de doações</h4></ion-item-option>
+          <ion-item-option color="white" (click)="diretrizes()"><h4>Diretrizes</h4></ion-item-option>
+          <ion-item-option color="white" (click)="calendario()"><h4>Calendário</h4></ion-item-option>
+          <ion-item-option color="white" (click)="videos()"><h4>Videos</h4></ion-item-option>
+          <ion-item-option color="white" (click)="tutorial()"><h4>Tutorial</h4></ion-item-option>
+        </ion-list>
+      </ion-content>
+    </ion-menu>
+  <ion-router-outlet main></ion-router-outlet>
+</ion-content>

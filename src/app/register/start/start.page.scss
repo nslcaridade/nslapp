@@ -1,0 +1,111 @@
+/*ion-content{
+  --ion-background-color: #0000B2 !important;
+}*/
+ion-avatar{
+  margin: auto;
+}
+
+ion-card{
+
+  .ion-card-header{
+    --text-color: #00BCCC;
+    .ion-card-subtitle{
+
+    }
+
+    .ion-card-title{
+      //color: var(--text-color, #00BCCC);
+      align-items: center;
+      text-align: center;
+    }
+  }
+  .ion-card-content {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+start-page {
+
+  :root {
+    --background: var(--ion-background-color,#133b4c);
+    --ion-background-color-rgb: 19,59,76;
+  }
+
+  container{
+    margin-top: 1.5rem;
+    background:rgba(2, 60, 117, 0.5);
+    border-radius: 5px;
+    box-shadow: 0 1.5px 0 0     rgba(0,0,0,0.1);
+    width:409px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo{
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 0;
+    width:25%;
+    height:50%;
+  }
+
+  .card-text{
+    margin-top: 5px;
+    text-align: center;
+    font-family: "museo-slab";
+    font-size:16px;
+  }
+
+  .register-content {
+    background: #305E94;
+
+    .logo-row {
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+
+    .form-box {
+      background: #1D395A;
+      padding: 20px 20px 0px 20px;
+      margin-top: 30px;
+    }
+
+    ion-row {
+       align-items: center;
+       text-align: center;
+    }
+
+    ion-item {
+         border-radius: 30px !important;
+         padding-left: 30px !important;
+         font-size: 0.9em;
+         margin-bottom: 10px;
+         border: 1px solid #ffffff;
+         border-bottom: 0px !important;
+         box-shadow: none !important;
+    }
+
+     .signup-col {
+       margin: 0px 16px 0px 16px;
+       padding-bottom: 20px;
+     }
+
+     .item-inner {
+       border-bottom-color: #ffffff !important;
+       box-shadow: none !important;
+     }
+
+     .submit-btn {
+       background: #6B8EBC;
+       border-radius: 30px !important;
+       border: 1px solid #ffffff;
+     }
+
+     .step-btn {
+       color: #ffffff;
+       font-size: 0.8em;
+     }
+  }
+
+}

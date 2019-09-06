@@ -1,0 +1,40 @@
+
+<ion-content class="content-page content-gradient" scrollX="true" scrollY="true">
+<!--<ion-content padding class=MeusDadosPage scroll=”false”>-->
+    <div padding id="meusdadospage-layer">
+      <form [formGroup]="meusDadosPageForm" autocomplete=”off” >
+        <ion-grid>
+          <ion-list>
+            <label><h5>Nome:</h5></label>
+            <ion-item class="input-item">
+              <ion-input type="phone" placeholder="{{nome}}" disabled ></ion-input>
+            </ion-item>
+            <ion-item><ion-label><h5>{{dia_acolhida}}</h5></ion-label>
+              <ion-select multiple="false" cancelText="Cancela" okText="Selecione" formControlName="cDiaAcolhida" required>
+                <ion-select-option *ngFor="let dia of dia_" value="{{dia.opcao}}">{{dia.opcao}}</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item><ion-label><h5>{{semana_escala}}</h5></ion-label>
+              <ion-select multiple="false" cancelText="Cancela" okText="Selecione" formControlName="cSemanaEscala" required>
+                <ion-select-option *ngFor="let semana of semana_" value="{{semana.opcao}}">{{semana.opcao}}</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-grid>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="6">
+              <ion-button expand="block" color="white" (click)="backMenu()">Voltar</ion-button>
+            </ion-col>
+            <ion-col size="6">
+              <ion-button expand="block" color="orange" (click)="atualizaUser()">Atualizar</ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button expand="block" class="cta low" color="danger" (click)="removeUser()" >Excluir meu cadastro</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </form>
+    </div>
+  </ion-content>
+  

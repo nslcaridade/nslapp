@@ -1,0 +1,44 @@
+
+<ion-content padding class=”userPage” scroll=”false”>
+  <div padding id="user-layer">
+    <form [formGroup]="userForm" (ngSubmit)="logForm()" autocomplete=”off” >
+      <ion-row align-items-center>
+        <ion-col>
+          <ion-avatar>
+            <ion-img src="/assets/slides/tour/tour-yellow.svg"></ion-img>
+          </ion-avatar>
+          <ion-note color="medium">
+            Vamos começar o seu cadastro por etapas.
+            <br />
+            O email informado é de grande utilidade, podemos enviar informações relevante da Pastoral.
+            <br />
+            Quando estiver pronto, insira as informações abaixo.
+          </ion-note>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <ion-list inset>
+
+            <ion-item>
+              <ion-label color="primary" position="floating">Nome</ion-label>
+              <ion-input type="text" placeholder="Informe seu Nome Completo" formControlName="user_name" required></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label color="primary" position="floating">Email</ion-label>
+              <ion-input type="email" placeholder="Informe seu Email" formControlName="user_email" required></ion-input>
+            </ion-item>
+
+          </ion-list>
+        </ion-col>
+      </ion-row>
+
+        <div class="footer">
+					<ion-button expand="block" class="cta" color="orange" type="submit" [disabled]="!userForm.valid">PRÓXIMO</ion-button>
+				</div>
+
+    </form>
+  </div>
+</ion-content>

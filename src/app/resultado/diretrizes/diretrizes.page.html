@@ -1,0 +1,15 @@
+<ion-content class="content-page content-gradient" scrollX="true" scrollY="true">
+  <div padding id="diretrizes-layer" style="text-align:center;"><h4>Diretriz Pastoral da Caridade</h4>
+      <ion-row >
+          <ion-col>
+              <p><span [innerHTML]="diretriz"></span></p>
+              <!--ion-text><h3>{{diretriz}}</h3></ion-text-->
+          </ion-col>
+        </ion-row>
+        <ion-button expand="block" class="cta low" color="white" (click)="backMenu()">Voltar</ion-button>
+    <!--form [formGroup]="diretrizesForm" (ngSubmit)="backMenu()" autocomplete=”off” >
+      <ion-button expand="block" class="cta" color="orange" (click)="openLocalPdf()">Open Local PDF</ion-button>
+      <ion-button expand="block" class="cta low" color="white" (click)="backMenu()">Voltar</ion-button>
+    </form-->
+  </div>
+</ion-content>

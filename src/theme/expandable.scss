@@ -1,0 +1,33 @@
+.no-spaces {
+	margin: 0;
+	padding: 0;
+}
+.page-title {
+	@extend .no-spaces;
+	text-align: left;
+	vertical-align: text-bottom;
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 32px;
+}
+.page-overline {
+	@extend .no-spaces;
+	text-align: left;
+	margin-top: 16px;
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 1.1em;
+	vertical-align: 16px;
+	color: inherit;
+	text-transform: uppercase;
+	letter-spacing: 0.4px;
+}
+
+.footer-button {
+	height: 48px;
+	--padding-top: 22px;
+	--padding-bottom: 22px;
+	--border-radius: 0;
+	--box-shadow: none;
+	--border-width: 0;
+}

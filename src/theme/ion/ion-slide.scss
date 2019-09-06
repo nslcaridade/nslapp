@@ -1,0 +1,24 @@
+.md,
+.ios {
+	ion-slide {
+		height: 100vh;
+		font-size: 16px;
+		color: var(--max-color-hex-body);
+	}
+	.swiper-container-horizontal > .swiper-pagination-bullets {
+		// background-color: rgba(127, 127, 0, 0.5);
+		bottom: 56px;
+		.swiper-pagination-bullet {
+			width: 10px;
+			height: 10px;
+			margin: 0 3px;
+			opacity: 1;
+			background: var(--bullet-background-active);
+			border: 2px solid var(--max-color-hex-white);
+		}
+		.swiper-pagination-bullet-active {
+			background: var(--max-color-hex-white);
+			border: 2px solid var(--bullet-background-active);
+		}
+	}
+}

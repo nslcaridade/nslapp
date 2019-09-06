@@ -1,0 +1,16 @@
+<ion-content class="content-page content-gradient" scrollX="true" scrollY="true">
+  <div padding id="bazar-layer">
+    <form [formGroup]="bazarForm" (ngSubmit)="backMenu()" autocomplete=”off” >
+      <ion-list lines="full"><h5>Relação de Bazar</h5>
+        <ion-item *ngFor="let bazar of allBazares">
+          <ion-label><h5>Em: {{ bazar.dataBazar }}, total: R${{bazar.valor}},00</h5></ion-label>
+        </ion-item>
+      </ion-list>
+      <ion-row align-items-center>
+        <ion-col>
+          <ion-button expand="block" class="cta low" color="white" type="submit" >Voltar</ion-button>
+        </ion-col>
+      </ion-row>
+    </form>
+  </div>
+</ion-content>

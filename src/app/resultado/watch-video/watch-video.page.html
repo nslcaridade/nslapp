@@ -1,0 +1,13 @@
+<ion-content class="content-page content-gradient" scrollX="true" scrollY="true">
+  <div padding id="watchvideospage-layer">
+    <form [formGroup]="watchVideoForm" (ngSubmit)="backMenu()" autocomplete=”off” >
+      <iframe width="100%" height="300" [src]="trustedVideoUrl" frameborder="0" allowfullscreen></iframe>
+       <h2>{{ video?.title }}</h2>
+       <ion-row align-items-center>
+        <ion-col>
+           <ion-button expand="block" class="cta low" color="white" type="submit" >Volta</ion-button>
+         </ion-col>
+       </ion-row>
+    </form>
+  </div>
+ </ion-content>
