@@ -133,7 +133,7 @@
 		}
 
 		.footer {
-			// background-color: rgba(0, 127, 255, 0.5);
+			//background-color: rgba(0, 127, 255, 0.5);
 			margin: 24px 0 0;
 			display: flex;
 			justify-content: stretch;
@@ -153,6 +153,10 @@
 	}
 }
 
+.activated {
+	--ion-item-background: transparent !important;
+  }
+
 .content-gradient {
 	h1 {
 		color: var(--max-color-hex-brand);
@@ -161,6 +165,11 @@
 	h4 {
 		font-size: 15px;
 		color: #B94F19;
+	}
+
+	h3 {
+		font-size: 18px;
+		font-family: 'Acme';
 	}
 
 	h5 {

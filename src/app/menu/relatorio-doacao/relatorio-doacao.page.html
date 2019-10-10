@@ -4,9 +4,9 @@
     <form [formGroup]="relatorioDoacaoForm" autocomplete=”off” accept-charset="utf-8">
       <ion-row>
         <ion-col>
-          <ion-list>
-            <ion-item><ion-label><h5>Instituição</h5></ion-label>
-              <ion-select multiple="false" cancelText="Cancela" okText="Selecione" formControlName="codInstituicao">
+          <ion-list style="background-color: transparent !important">
+            <ion-item [class.activated]="descricao" ><ion-label><h3>{{descricao}}</h3></ion-label>
+              <ion-select style="background-color: transparent !important" multiple="false" cancelText="Cancela" okText="Selecione" formControlName="codInstituicao">
               <ion-select-option *ngFor="let institution of allInstitutions" value="{{institution.id}}">{{institution.nome}}</ion-select-option>
               </ion-select>
             </ion-item>
@@ -16,22 +16,22 @@
       <ion-grid>
         <ion-row>
           <ion-col size="6">
-            <ion-label><h5>data inicio</h5></ion-label>
+            <ion-label><h3>data inicio</h3></ion-label>
           </ion-col>
           <ion-col size="6">
-            <ion-label><h5>data Fim</h5></ion-label>
+            <ion-label><h3>data Fim</h3></ion-label>
           </ion-col>
         </ion-row>
       </ion-grid>
       <ion-grid>
       <ion-row>
         <ion-col size="6" size-sm>
-            <ion-item >
-              <ion-input type="date" formControlName="startDate"></ion-input>
+            <ion-item [class.activated]="startDate">
+              <ion-input type="date"  style="background-color: transparent !important" formControlName="startDate"></ion-input>
             </ion-item>
         </ion-col>
         <ion-col size="6" size-sm>
-            <ion-item >
+            <ion-item [class.activated]="endDate">
               <ion-input type="date" formControlName="endDate"></ion-input>
             </ion-item>
         </ion-col>

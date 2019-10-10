@@ -41,6 +41,7 @@ export class CalendarioPage implements OnInit {
         data => {
         if ( data !== null ){
          this.allCalendario = JSON.parse(JSON.stringify(data));
+         document.getElementById("AjaxLoader").style.display = "none";
         }});
       }
 
@@ -54,6 +55,7 @@ export class CalendarioPage implements OnInit {
             this.dataBase.removeKey('CAL');
             this.dataBase.setKeyValue('CAL',this.allCalendario);
             console.log("Calendario:"+JSON.stringify(calendario));
+            document.getElementById("AjaxLoader").style.display = "none";
           }, err => {
           });
         }

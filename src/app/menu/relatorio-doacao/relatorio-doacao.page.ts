@@ -20,6 +20,7 @@ export class RelatorioDoacaoPage implements OnInit {
   cod_intitution: number;
   start_date: string='';
   end_date: string='';
+  descricao="Instituição";
 
   public allInstitutions: any;
 

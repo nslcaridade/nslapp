@@ -3,11 +3,11 @@
   <div padding id="videospage-layer">
     <form [formGroup]="videoForm" (ngSubmit)="sanitize()" autocomplete=”off” >
       <ion-grid>
-        <ion-list>
-          <label><h5>Videos:</h5></label>
-          <ion-item *ngFor="let video of videos_">
-             <ion-button class="footer-button" color="white" expand="full" (click)="showVideo(video.url)">
-             <h5>{{ video.titulo }}</h5></ion-button>
+        <ion-list style="background-color: transparent !important" >
+          <label><h4>Videos:</h4></label>
+          <ion-item *ngFor="let video of videos_" [class.activated]="video">
+             <ion-button class="footer-button" color="transparent" (click)="showVideo(video.url)">
+             <h5 >{{ video.titulo }}</h5></ion-button>
           </ion-item>
         </ion-list>
         <div class="row">

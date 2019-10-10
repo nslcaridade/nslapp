@@ -3,10 +3,10 @@
 <!--<ion-content padding class=DetalheInstituicaoPage scroll=”false”>-->
   <div padding id="detalheInstituicao-layer">
    <form [formGroup]="detalheInstituicaoForm" (ngSubmit)="back()" autocomplete=”off” >
-    <ion-grid color="blue">
-      <ion-item>
+    <ion-grid>
+      <ion-item [class.activated]="nome">
         <ion-text>
-          <h1>{{nome}}</h1> 
+          <h4>{{nome}}</h4> 
           <h5>{{descricao}}</h5>
           <h5>Endereco :{{endereco}}</h5>
           <h5>Contato  :{{telefone}}<p></p></h5>
