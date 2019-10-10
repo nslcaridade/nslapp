@@ -40,20 +40,26 @@ export class RelatorioPage implements OnInit {
     //private formBuilder: FormBuilder,
     public doacaoApi: DoacaoService) {
 
-      console.log('Passo 1');
-      this.image = "./../../../assets/img/piggy-bank.svg";
-
+    }
+    
+    ngOnInit() {
+      
+      this.sub = this.route.params.subscribe(params => {
+        this.cod_intitution = +params['codInstituicao'];
+        this.start_date = params['startDate'];
+        this.end_date = params['endDate'];
+        this.nome = params['nome'];
+      });
+      this.listaDoacoes();
+  }
+  ngAfterViewInit(){
+    document.getElementById("AjaxLoader").style.display = "none";
+    console.log("after view init")
   }
 
-  ngOnInit() {
-    this.sub = this.route.params.subscribe(params => {
-       this.cod_intitution = +params['codInstituicao'];
-       this.start_date = params['startDate'];
-       this.end_date = params['endDate'];
-       this.nome = params['nome'];
-     });
-
-     this.listaDoacoes();
+  ngAfterContentInit(){
+    document.getElementById("AjaxLoader").style.display = "none";
+    console.log("after CONTENT init");
   }
 
   ngOnDestroy() {
@@ -66,10 +72,12 @@ export class RelatorioPage implements OnInit {
       .subscribe( (data: any) => {
         this.allDoacoes = JSON.parse(JSON.stringify(data.relatorioDoacao));
         this.somatoria();
+
       }, err => {
         console.log(err);
 
       });
+              document.getElementById("AjaxLoader").style.display = "none";
   }
 
   somatoria(){

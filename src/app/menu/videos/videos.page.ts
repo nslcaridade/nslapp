@@ -37,6 +37,7 @@ export class VideosPage {
   }
 
   ngOnInit() {
+    document.getElementById("AjaxLoader").style.display = "block";
     this.videosList();
   }
 
@@ -46,7 +47,7 @@ export class VideosPage {
       
       this.videos_ = JSON.parse(JSON.stringify(listvd.ltVideos));
       console.log(listvd.ltVideos);
-      
+      document.getElementById("AjaxLoader").style.display = "none";
     }, err => {
       
     });

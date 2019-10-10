@@ -70,6 +70,34 @@
 		U+2215, U+FEFF, U+FFFD;
 }
 
+/* dynalight-regular - latin */
+@font-face {
+	font-family: "Dynalight";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Dynalight"), local("Dynalight-Regular"),
+		 url(../assets/fonts/dynalight-v8-latin-regular.woff2) format("woff2");
+  }
+  
+  /* give-you-glory-regular - latin */
+@font-face {
+	font-family: 'Give You Glory';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Give You Glory'), local('GiveYouGlory'),
+		 url(../assets/fonts/give-you-glory-v9-latin-regular.woff2) format('woff2'); /* Super Modern Browsers */
+  }
+  
+  /* acme-regular - latin */
+@font-face {
+	font-family: 'Acme';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Acme Regular'), local('Acme-Regular'),
+	     url(../assets/fonts/acme-v9-latin-regular.woff2) format('woff2'); /* Legacy iOS */
+  }
+  
+
 /** Ionic CSS Variables **/
 :root {
 	--max-color-hex-white: #ffffff;
