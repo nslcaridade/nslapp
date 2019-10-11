@@ -14,7 +14,7 @@
                 <ion-select-option *ngFor="let dia of dia_" value="{{dia.opcao}}">{{dia.opcao}}</ion-select-option>
               </ion-select>
             </ion-item>
-            <label><h4>Dia acolhida:</h4></label>
+            <label><h4>Semana acolhida:</h4></label>
             <ion-item [class.activated]="semana_escala"><ion-label><h5>{{semana_escala}}</h5></ion-label>
               <ion-select multiple="false" cancelText="Cancela" okText="Selecione" formControlName="cSemanaEscala" required>
                 <ion-select-option *ngFor="let semana of semana_" value="{{semana.opcao}}">{{semana.opcao}}</ion-select-option>
